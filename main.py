@@ -60,25 +60,22 @@ def insertion_sort(data_list):
 ## Used this input for Experiment 2
 experiment_list = [80,81,82,83,84,85,86,87,88,89,90]
 
-merge_sort_times = []
-insertion_sort_times = []
+mergeSortTimes = []
+insertionSortTimes = []
 
 for n in experiment_list:
     arr = [random.randint(0, 1000) for _ in range(n)]
 
     # Time merge sort
-    merge_sort_time = timeit.timeit(lambda: merge_sort(arr.copy()), number=1000)
-    merge_sort_times.append(merge_sort_time)
+    mergeSortTime = timeit.timeit(lambda: merge_sort(arr.copy()), number=1000)
+    mergeSortTimes.append(mergeSortTime)
 
     # Time insertion sort
-    insertion_sort_time = timeit.timeit(lambda: insertion_sort(arr.copy()), number=1000)
-    insertion_sort_times.append(insertion_sort_time)
+    insertionSortTime = timeit.timeit(lambda: insertion_sort(arr.copy()), number=1000)
+    insertionSortTimes.append(insertionSortTime)
 
-print("Merge Sort Times: ", merge_sort_times)
-print("Insertion Sort Times: ", insertion_sort_times)
-
-
-
+print("Merge Sort Times: ", mergeSortTimes)
+print("Insertion Sort Times: ", insertionSortTimes)
 
 
 
