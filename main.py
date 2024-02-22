@@ -58,9 +58,6 @@ def insertion_sort(data_list):
 #experiment_list =[10,20,40,60,70,80,90,100]
 
 ## Used this input for Experiment 2
-#experiment_list =[85,86,87,88,89,90,91,92,93,94,95,96,97,98]
-
-## Used this input for Experiment 3
 experiment_list = [80,81,82,83,84,85,86,87,88,89,90]
 
 merge_sort_times = []
